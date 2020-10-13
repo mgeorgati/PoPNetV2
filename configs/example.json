@@ -1,0 +1,19 @@
+{
+  "exp_name": "cph",
+  "sub_exp": "attempt_envData11",
+  "num_epochs": 300,
+  "learning_rate": 0.001,
+  "batch_size": 32,
+  "max_to_keep": 5,
+  "chunk_height": 16,
+  "chunk_width": 16,
+  "feature_list": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  "feature_values": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 100],
+  "num_outputs": 4,
+  "pop_proj": [30.000, 31.400, 32.300, 33.400],
+  "train_size": 0.7,
+  "test_size": 0.3,
+  "cost_cell": 0.5,
+  "cost_chunk": 0.5,
+  "bbox": [4456317, 3608539, 4497117, 3636839]
+}
