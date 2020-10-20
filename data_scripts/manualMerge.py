@@ -1,10 +1,10 @@
 import subprocess
 import os
 import sys
-path=r"C:\\FUME\\popnetv2\\data\\pop_tur"
+path="C:\FUME\popnetv2\data\pop_tur"
 python_scripts_folder_path = r'C:\Users\NM12LQ\Anaconda3\Scripts'
-outfile2011 = path + "\\2011withExtra4.tif"
-outfile2017 = path + "\\2017withExtra4.tif"
+outfile2011 =  "C:\FUME\popnetv2\data_scripts\Project_data\dst_data\\new.tif"
+outfile2017 = "C:\FUME\popnetv2\data_scripts\Project_data\dst_data\\2017withExtra4.tif"
 ancillary_data_path = "C:\\FUME\\popnetv2\\data\\AncillaryData\\CPH_data"
 
 # Merging files for 2011
@@ -24,9 +24,14 @@ WE = "{}\\totalPop_western_europe_2011.tif".format(path)
 sogn = ancillary_data_path + "\\cph_sogn.tif"
 forests = ancillary_data_path + "\\cph_forestsReProj.tif"
 vand = ancillary_data_path +  "\\cph_vandReProj.tif"
-cmd_tif_merge = "python {0}\gdal_merge.py -o {1} -separate {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12} {13} {14} {15}" \
-    .format(python_scripts_folder_path, outfile2011, tur,
-    CA,EA,EE,NAf,NAm,NE,SA,SEA,SE,WA,WE, forests, vand)
+
+names = [tur,CA, NE, SE, WA, WE]
+
+my_string = " ".join(["{}".format(names[i]) for i in range(len(names))])
+print(my_string)
+
+cmd_tif_merge = "python {0}\gdal_merge.py -o {1} -separate {2} " \
+    .format(python_scripts_folder_path, outfile2011, my_string)
 print(cmd_tif_merge)
 subprocess.call(cmd_tif_merge, shell=False)
 
@@ -47,8 +52,8 @@ WE = path + "\\totalPop_western_europe_2017.tif"
 sogn = ancillary_data_path + "\\cph_sogn.tif"
 forests = ancillary_data_path + "\\cph_forestsReProj.tif"
 vand = ancillary_data_path +  "\\cph_vandReProj.tif"
-cmd_tif_merge = "python {0}\gdal_merge.py -o {1}  -separate {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12} {13} {14} {15}" \
-    .format(python_scripts_folder_path, outfile2017, tur,
-    CA,EA,EE,NAf,NAm,NE,SA,SEA,SE,WA,WE, forests,vand)
-print(cmd_tif_merge)
-subprocess.call(cmd_tif_merge, shell=False)
+#cmd_tif_merge = "python {0}\gdal_merge.py -o {1}  -separate {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12} {13} {14} {15}" \
+#    .format(python_scripts_folder_path, outfile2017, tur,
+#   CA,EA,EE,NAf,NAm,NE,SA,SEA,SE,WA,WE, forests,vand)
+#print(cmd_tif_merge)
+#subprocess.call(cmd_tif_merge, shell=False)

@@ -12,7 +12,7 @@ from postgres_to_raster import psqltoshp
 from postgres_to_raster import shptoraster
 
 def process_data( pgpath, pghost, pgport, pguser, pgpassword, pgdatabase, ancillary_data_folder_path,temp_shp_path,temp_tif_path,
-                  init_import_to_postgres,restructure_tables_sql,init_export_data,init_rasterize_data,engine):
+                  init_import_to_postgres,restructure_tables_sql,init_export_data,init_rasterize_data,merge_data_subregion,engine):
     #Start total preparation time timer
     start_total_algorithm_timer = time.time()
 

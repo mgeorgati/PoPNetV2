@@ -18,7 +18,7 @@ city ='cph'
 
 # choose processes to run ----------------------------------------------------------------------------------------------
 # Initial preparation of Population data ("yes" / "no") csvTOdbTOshpTOtif
-init_prep = "no"
+init_prep = "yes"
 #Import data to postgres? ("yes" / "no")
 init_import_to_postgres = "no"
 # Run postgres queries? ("yes" / "no")
@@ -40,14 +40,14 @@ merge_data_subregion = "no"
 
 # Specify database information -----------------------------------------------------------------------------------------
 # path to postgresql bin folder
-pgpath = r';C:\Program Files\PostgreSQL\12\bin'
+pgpath = r';C:\Users\NM12LQ\Anaconda3\envs\popnet_env\Library\bin'
 pghost = 'localhost'
 pgport = '5432'
 pguser = 'postgres'
 pgpassword = 'postgres'
-pgdatabase = 'dst_data'
+pgdatabase = 'myinner_db'
 #connection
-engine = create_engine('postgresql://postgres:postgres@localhost:5432/dst_data')
+engine = create_engine('postgresql://{0}:{1}@{2}:{3}/{4}'.format(pguser,pgpassword,pghost,pgport,pgdatabase))
 
 # DIFFERENT PATHS ------------------------------------------------------------------------------------------------------
 # Get path to main script
@@ -82,4 +82,4 @@ gdal_rasterize_path = r'C:\Users\NM12LQ\Anaconda3\Lib\site-packages\osgeo'
 
 
 process_data( pgpath, pghost, pgport, pguser, pgpassword, pgdatabase, ancillary_data_folder_path,temp_shp_path,temp_tif_path,
-                  init_import_to_postgres,restructure_tables_sql,init_export_data,init_rasterize_data,engine)
+                  init_import_to_postgres,restructure_tables_sql,init_export_data,init_rasterize_data,merge_data_subregion,engine)
