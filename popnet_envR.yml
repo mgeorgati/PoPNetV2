@@ -1,0 +1,8 @@
+name: popnet_envR
+channels:
+  - conda-forge
+  - defaults
+dependencies:  
+  - r-base = 3.6.1
+  - r-essentials = 3.6.0 
+  - rstudio = 1.1.456
