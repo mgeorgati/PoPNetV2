@@ -1,0 +1,1 @@
+* 2020-10-05 Point snapping is disabled in all datasets, number of decimals increased for 01M datasets.

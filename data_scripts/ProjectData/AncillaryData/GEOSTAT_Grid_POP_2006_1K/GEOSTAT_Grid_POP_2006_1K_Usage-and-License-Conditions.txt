@@ -1,0 +1,25 @@
+Subject of this license and usage conditions are the data contained in the file GEOSTAT_Grid_POP_2006_1K.csv.
+
+GEOSTAT 2006 grid dataset access and use conditions and limitations
+
+The GEOSTAT 2006 grid dataset may be freely copied, published and distributed by the user within the user’s own organisation (enterprise, governmental authority or municipality).
+
+Outside the user’s organisation the dataset shall not, either in whole or in part, be sold to others or otherwise used for commercial purposes by the user.
+The user shall also refrain from disseminating the dataset to multiple clients, outside the user’s own organisation.
+
+The following additional limitations to use national data depend on the source of the data as marked in the field DATA_SRC in the file GEOSTAT_Grid_POP_2006_1K.csv.
+
+The data produced by Statistics AT, FI, FR, SE, DK, PL, EE, SI, NL, NO, UK, PT shall be the property of the respective National Statistical Office. The data records produced by the above organisations are flagged accordingly with their ISO country code in the attribute DATA_SRC.
+
+For Spain the data set has been produced by the University of Valencia and the Polytechnical University of Valencia (DATA_SRC = UV). The statistical data are property of the statistical office in Spain.
+
+In addition for SE: All rights to the product shall be the property of Statistics Sweden under the provisions of the Copyright Act (1960:729). The Copyright Act contains provisions for penalties and damages related to copyright violation.
+Users who wish to use the dataset for commercial purposes or to disseminate the dataset without charges should contact Statistics Sweden in order to make an agreement.
+Contact information: regionalt@scb.se.
+
+In addition for DK: All rights to the product shall be the property of Statistics Denmark (www.dst.dk).
+Users that wish to use the dataset for commercial purposes or to disseminate the dataset without charges should contact Statistics Denmark (www.dst.dk) in order to make an agreement. Contact information: Erik Sommer, Chief Adviser, Customer Centre, eso@dst.dk. Trade with Statistics Denmark is governed by Danish law.
+Any dispute that cannot be resolved by negotiations between the parties must be settled by the Maritime and Commercial Court in Copenhagen as the court of first instance. Information about the business conditions for use of data from Statistics Denmark:
+
+General information on content, lineage and access and use conditions can be found in the metadata file MD_GEOSTAT_Grid_POP_2006_1K.xml included in the download zip package.
+

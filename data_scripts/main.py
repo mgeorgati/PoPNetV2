@@ -6,8 +6,9 @@ from process import process_data
 
 # ATTENSION ------------------------------------------------------------------------------------------------------------
 # Before running this script, a database should be created in postgres and the database information entered below, if
-# it's not the same. Furthermore, the Project_data folder, scound be placed in the same folder as the scripts
+# it's not the same. Furthermore, the Project_data folder, shound be placed in the same folder as the scripts
 # (main, process, import_to_postgres, postgres_to_shp, postgres_queries and rast_to_vec_grid)
+CNTR_CODE = "DK", "NL", "PL", "IT"
 city ='cph'
 # Folder strudture:
 # scripts
@@ -45,7 +46,7 @@ pghost = 'localhost'
 pgport = '5432'
 pguser = 'postgres'
 pgpassword = 'postgres'
-pgdatabase = 'myinner_db'
+pgdatabase = '{}_data'.format(city)
 #connection
 engine = create_engine('postgresql://{0}:{1}@{2}:{3}/{4}'.format(pguser,pgpassword,pghost,pgport,pgdatabase))
 
@@ -55,7 +56,7 @@ python_script_dir = os.path.dirname(os.path.abspath(__file__))
 print(python_script_dir)
 # Paths for the data / folders in the Project_data folder --------------------------------------------------------------
 #path to ancillary data folder
-ancillary_data_folder_path = python_script_dir + "\\Project_data\\dst_data".format(city) #"\Project_data\DST_raw_data"
+ancillary_data_folder_path = python_script_dir + "/Project_data/AncillaryData" #"\Project_data\DST_raw_data"
 
 #path to folder for intermediate shapefiles of all years and all origins
 temp_shp_path = python_script_dir + "\\Project_data\\temp_shp".format(city)
@@ -81,5 +82,5 @@ python_scripts_folder_path = r'C:\Users\NM12LQ\Anaconda3\Scripts'
 gdal_rasterize_path = r'C:\Users\NM12LQ\Anaconda3\Lib\site-packages\osgeo'
 
 
-process_data( pgpath, pghost, pgport, pguser, pgpassword, pgdatabase, ancillary_data_folder_path,temp_shp_path,temp_tif_path,
+process_data(pgpath, pghost, pgport, pguser, pgpassword, pgdatabase, ancillary_data_folder_path,temp_shp_path,temp_tif_path,
                   init_import_to_postgres,restructure_tables_sql,init_export_data,init_rasterize_data,merge_data_subregion,engine)

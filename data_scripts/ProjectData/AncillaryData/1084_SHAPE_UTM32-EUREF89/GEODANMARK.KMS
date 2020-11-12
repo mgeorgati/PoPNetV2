@@ -1,0 +1,82 @@
+================================================================================
+GST LDS Udtræk : Script Version 7, d. 28. april 2015
+Geodatastyrelsen
+Rentemestervej 8
+DK 2400 København NV
++45 7254 5000
+gst@gst.dk, www.gst.dk
+Data distribueres i henhold til aftale om frie data
+--------------------------------------------------------------------------------
+Udtræks dato      :                        onsdag 14. oktober 2020 klokken 09:20
+Jobid             :                                                      1418327
+Dataset           :                                                   GEODANMARK
+Projektion        :                                                UTM32-EUREF89
+Format            :                                                        SHAPE
+Område kode       :                                                         1084
+Min X             :                                                       667200
+Min Y             :                                                      6110296
+Max X             :                                                       892735
+Max Y             :                                                      6231605
+
+================================================================================
+Kode  Tabel                Beskrivelse                                     Antal
+--------------------------------------------------------------------------------
+9901  TEKNISK_AREAL        Teknisk areal                                    1871
+9902  BASSIN               Bassin                                           1390
+9905  HOEJSPAENDINGSLEDNING Højspændingsledning                               196
+9906  BYGVAERK             Bygværk                                         50002
+9907  ANLAEG_DIVERSE       Anlæg diverse                                   11817
+9908  HOEFDE               Høfde                                             745
+9909  PARKERING            Parkering                                       27340
+9910  TELEMAST             Telemast                                          990
+9911  VINDMOELLE           Vindmølle                                         426
+9912  MAST                 Mast                                           462996
+9913  NEDLOEBSRIST         Nedløbsrist                                    631820
+9914  BROENDDAEKSEL        Brønddæksel                                    475607
+9915  STATUE_STEN          Statue_Sten                                       553
+9917  SKOV                 Skov                                            13901
+9918  HEDE                 Hede                                              141
+9919  VAADOMRAADE          Vådområde                                        3368
+9920  KRAT_BEVOKSNING      Krat_Bevoksning                                 16745
+9921  SAND_KLIT            Sand_Klit                                         128
+9922  RAASTOFOMRAADE       Råstofområde                                       81
+9926  BRUGSGRAENSE         Brugsgrænse                                    314756
+9927  SKRAENT              Skrænt                                          67132
+9928  DIGE                 Dige                                            17317
+9929  TRAE                 Træ                                            676090
+9930  TRAEGRUPPE           Trægruppe                                      174516
+9932  VEJMIDTE             Vejmidte                                       565308
+9933  SYSTEMLINJE          Systemlinje                                      4271
+9934  VEJKANT              Vejkant                                        475754
+9935  HELLE                Helle                                           12224
+9936  CHIKANE              Chikane                                         30424
+9937  TRAFIKHEGN           Trafikhegn                                       7666
+9939  BADE_BAADEBRO        Bade_Bådebro                                     1380
+9941  JERNBANE             Jernbane                                         5249
+9942  SOE                  Sø                                              32099
+9943  VANDLOEBSMIDTE       Vandløbsmidte                                  153009
+9944  HAVN                 Havn                                             1364
+9945  KYST                 Kyst                                             2034
+9946  BYGNING              Bygning                                       1575038
+9948  OMRAADEPOLYGON       Områdepolygon                                     497
+9952  BYKERNE              Bykerne                                            68
+9953  ERHVERV              Erhverv                                          1215
+9954  LAV_BEBYGGELSE       Lav bebyggelse                                  22561
+9955  HOEJ_BEBYGGELSE      Høj bebyggelse                                    741
+9956  AFVANDINGSGROEFT     Afvandingsgrøft                                  7273
+9957  VANDLOEBSKANT        Vandløbskant                                    22948
+9963  VEJMIDTE_BRUDT       Vejmidte_brudt                                 565308
+9964  JERNBANE_BRUDT       Jernbane_brudt                                   5249
+9965  VANDLOEBSMIDTE_BRUDT Vandløbsmidte_brudt                            153009
+9970  STARTBANE            Startbane                                          91
+9971  SKORSTEN             Skorsten                                         1701
+9972  HEGN                 Hegn                                          1742769
+9973  GARTNERI             Gartneri                                          279
+9974  REKREATIVT_OMRAADE   Rekreativt_område                                  24
+9975  PARKERINGSOMRAADE    Parkeringsområde                                    1
+9977  DAEMNING             Dæmning                                            25
+9978  BEGRAVELSESOMRAADE   Begravelsesområde                                 377
+9980  TOGSTATION           Togstation                                        244
+--------------------------------------------------------------------------------
+Antal features skrevet                                                   8340128
+================================================================================
